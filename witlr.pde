@@ -1,9 +1,9 @@
 import java.io.FileReader;
-public class witlr {
+public class Reader {
     String filename;
     String[] data;
 
-    public witlr (String filename) {
+    public Reader (String filename) {
         this.filename = filename;
         this.data = new String[numLines()];
         int count = 0;
