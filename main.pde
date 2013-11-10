@@ -1,10 +1,26 @@
+import java.util.List;
+import java.util.Iterator;
+Menu m;
+
 void setup() {
-    Reader read = new Reader("apprenticeships future.csv");
+    size(500, 500);
+    witlr read = new witlr("apprenticeships future.csv");
     Question q = read.getQuestion();
     println(q.getTitle());
-    //println(q.getAnswers());
+    m = new Menu(10);
+    
+    List<Answer> l = q.getAnswers();
+    Iterator i = l.iterator();
+    println(q.getTitle());
+    while(i.hasNext()) {
+        Answer a = (Answer)i.next();
+        Bubble[] values = a.getBubbles();
+        for(int j = 0; j < values.length; j++) {
+            println(values[j].getCountry() + "\t" + a.getTitle() + "\t" + values[j].getSize());
+        }
+    }
 }
 
-void loop() {
-    
+void draw() {
+    m.drawMenu();
 }

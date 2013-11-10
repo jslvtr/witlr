@@ -1,9 +1,9 @@
 import java.io.FileReader;
-public class Reader {
+public class witlr {
     String filename;
     String[] data;
 
-    public Reader (String filename) {
+    public witlr (String filename) {
         this.filename = filename;
         this.data = new String[numLines()];
         int count = 0;
@@ -32,7 +32,7 @@ public class Reader {
             float[] values = new float[4];
             for (int j = 1; j < split.length; j++) {
                 try {
-                    values[j-1] = Float.parseFloat(split[i]);
+                    values[j-1] = Float.parseFloat(split[j]);
                 } 
                 catch(Exception e) {
                     values[j-1] = 0.0f;

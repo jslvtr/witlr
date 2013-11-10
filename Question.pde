@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Question {
     public final String ENGLAND = "England";
-    public final String NIRELAND = "Northern Ireland";
+    public final String NIRELAND = "N.Ireland";
     public final String SCOTLAND = "Scotland";
     public final String WALES = "Wales";
 
