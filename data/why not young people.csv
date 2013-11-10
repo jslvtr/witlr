@@ -1,12 +1,12 @@
-No young people applied;0.4;0.45;0.41;0.38
-Quality: lack of skills;0.23;0.26;0.29;0.21
-Quality: lack of qualifications;0.15;0.21;0.18;0.1
-Quality: lack of experience;0.28;0.39;0.37;0.32
-Quality: poor attitudes, motivation and/or personality;0.17;0.19;0.23;0.18
-Quality: poor quality application;0.13;0.18;0.17;0.12
-Quality: other;0.02;0.01;0.02;0.01
-NET: QUALITY;0.45;0.49;0.54;0.41
-Insurance;0.03;0.03;0.01;0.05
-Age issue / too young / needed someone older;0.06;0.07;0.07;0.08
-Other;0.1;0.04;0.07;0.1
-No reason / don't know;0.07;0.09;0.06;0.07
+No young people applied,0.4,0.45,0.41,0.38
+Quality: lack of skills,0.23,0.26,0.29,0.21
+Quality: lack of qualifications,0.15,0.21,0.18,0.1
+Quality: lack of experience,0.28,0.39,0.37,0.32
+Quality: poor attitudes; motivation and/or personality,0.17,0.19,0.23,0.18
+Quality: poor quality application,0.13,0.18,0.17,0.12
+Quality: other,0.02,0.01,0.02,0.01
+NET: QUALITY,0.45,0.49,0.54,0.41
+Insurance,0.03,0.03,0.01,0.05
+Age issue / too young / needed someone older,0.06,0.07,0.07,0.08
+Other,0.1,0.04,0.07,0.1
+No reason / don't know,0.07,0.09,0.06,0.07

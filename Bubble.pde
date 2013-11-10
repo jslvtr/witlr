@@ -5,11 +5,9 @@ public class Bubble {
     private float g;
 
 
-    public Bubble (float size, String country, int r, int g) {
+    public Bubble (float size, String country) {
         this.country = country;
         this.size = size;
-        this.r = r;
-        this.g = g;
     }
 
     public String getCountry () {
@@ -24,12 +22,7 @@ public class Bubble {
         return this.r; 
     }
     
-    public float getG(){
-        return this.g; 
-    }
-    
-    void makeColour(){
-      r = map((size*100), 0, 100, 255, 0);
-      g = map((size*100), 0, 100, 0, 255);
+    public void makeColour(float min, float max){
+      r = map((size), min, max, 0, 255);
     }
 }

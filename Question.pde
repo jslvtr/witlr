@@ -25,21 +25,32 @@ public class Question {
 
     public void addAnswer(String title, float[] data) {
         Bubble[] toAdd = new Bubble[4];
+        float min = 1.0f;
+        float max = 0.0f;
         for (int i = 0; i < data.length; i++) {
             switch (i) {
             case 0:
                 toAdd[i] = new Bubble(data[i], ENGLAND);
+                if(data[i] < min) min = data[i];
+                if(data[i] > max) max = data[i];
                 break;
             case 1:
                 toAdd[i] = new Bubble(data[i], NIRELAND);
+                if(data[i] < min) min = data[i];
+                if(data[i] > max) max = data[i];
                 break;
             case 2:
                 toAdd[i] = new Bubble(data[i], SCOTLAND);
+                if(data[i] < min) min = data[i];
+                if(data[i] > max) max = data[i];
                 break;
             case 3:
                 toAdd[i] = new Bubble(data[i], WALES);
+                if(data[i] < min) min = data[i];
+                if(data[i] > max) max = data[i];
                 break;
             }
+            toAdd[i].makeColour(min, max);
         }
 
         answers.add (new Answer(title, toAdd));
