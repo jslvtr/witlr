@@ -1,8 +1,8 @@
 public class Bubble {
     private final String country;
     private final float size;
-    private final int r;
-    private final int g;
+    private constant float r;
+    private constant float g;
 
 
     public Bubble (float size, String country, int r, int g) {
@@ -20,11 +20,11 @@ public class Bubble {
         return this.size;
     }
     
-    public int getR(){
+    public float getR(){
         return this.r; 
     }
     
-    public int getG(){
+    public float getG(){
         return this.g; 
     }
     
