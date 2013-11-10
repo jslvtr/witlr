@@ -26,7 +26,6 @@ public class Reader {
     public Question getQuestion() {
         String[] vals = split(filename, ".");
         
-        println(vals);
         Question q = new Question(vals[0]);
         for (int i = 0; i < data.length; i++) {
             String[] split = data[i].split(",");
