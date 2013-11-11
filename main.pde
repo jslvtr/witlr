@@ -12,7 +12,7 @@ void setup() {
     //    Reader read = new Reader("apprenticeships future.csv");
     //    Question q = read.getQuestion();
     //    println(q.getTitle());
-    File folder = new File("/Users/jslvtr/Documents/Processing/witlr/data/");
+    File folder = new File(dataPath("."));
     File[] csvs = folder.listFiles();
     for (int k = 0; k < csvs.length; k++) {
         if (csvs[k].isFile() && !csvs[k].getName().startsWith(".")) {
